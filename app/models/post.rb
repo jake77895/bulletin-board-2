@@ -5,12 +5,11 @@
 #  id         :bigint           not null, primary key
 #  body       :text
 #  expires_on :date
-#  integers   :string
 #  title      :string
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  board_id   :integer
-#  user_id    :string
+#  user_id    :integer
 #
 class Post < ApplicationRecord
   validates(:title, presence: true)
